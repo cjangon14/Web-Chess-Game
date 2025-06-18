@@ -26,5 +26,5 @@ Supports:
 ## 🚀 Getting Started
 
 1. Clone or download this repository.
-2. Open `chess-game.html` in your browser.
+2. Open `index.html` in your browser.
 3. Play chess!
