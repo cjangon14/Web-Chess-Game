@@ -28,3 +28,11 @@ Supports:
 1. Clone or download this repository.
 2. Open `index.html` in your browser.
 3. Play chess!
+
+You can also [play it live here](https://cjangon14.github.io/Web-Chess-Game/).
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
