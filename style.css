@@ -1,15 +1,49 @@
 /* Global Styles */
 body {
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  background: linear-gradient(135deg, #fdfdfd, #e4ecf7);
-  color: #333;
+  font-family: 'Poppins', 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #2b2b2b;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
 }
+
+/* Smooth animated gradient */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header Style */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #1a73e8, #673ab7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Text glow animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(103, 58, 183, 0.4), 0 0 20px rgba(26, 115, 232, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(103, 58, 183, 0.6), 0 0 30px rgba(26, 115, 232, 0.4);
+  }
+}
+
 
 
 /* Header Style */
@@ -122,4 +156,43 @@ h1 {
     box-shadow: inset 0 0 0 3px rgba(0, 123, 255, 0.8),
                 0 0 12px rgba(0, 123, 255, 0.5);
   }
+}
+
+/* Layout Wrapper */
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Turn Indicator & Timer */
+#turn-indicator, #timer {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #2b2b2b;
+}
+
+/* Timer Label */
+p span#timer {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #64b5f6, #2196f3);
+  transform: scale(1.05);
 }
