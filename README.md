@@ -10,7 +10,8 @@ Supports:
 - 🎯 Highlight moves and threats
 
 ## 📸 Screenshot
-![image](https://github.com/user-attachments/assets/89ae1dd8-b62f-4cc6-b3a0-8996a978a674)
+![image](https://github.com/user-attachments/assets/bd1b2907-1b44-4ebc-9102-7d84b1408a39)
+
 
 ## 🔧 Features
 
