@@ -28,8 +28,3 @@ Supports:
 1. Clone or download this repository.
 2. Open `index.html` in your browser.
 3. Play chess!
-
-```bash
-git clone https://github.com/yourusername/chess-game.git
-cd chess-game
-open index.html # or double-click it
